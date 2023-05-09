@@ -41,9 +41,11 @@
                 });
         }
 
-        result.innerHTML = '<div class = result></div>'
-
-            }
+        const img = document.createElement('img');
+        img.innerHTML = result;
+        const app = document.getElementById('app');
+        document.body.insertBefore(img, app);
+    }
 </script>
 
 
